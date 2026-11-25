@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 35a - Form đăng ký</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="registerForm">
+            <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+            <p class="subtitle">Vui lòng nhập thông tin của bạn</p>
+
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name"
+                   placeholder="Nhập họ và tên" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email"
+                   placeholder="example@gmail.com" required>
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password"
+                   placeholder="Nhập mật khẩu" required>
+
+            <div class="terms">
+                <input type="checkbox" id="agree">
+                <label for="agree">Tôi đồng ý với điều khoản sử dụng</label>
+            </div>
+
+            <button type="submit">Đăng ký</button>
+
+            <p id="message" role="status"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
